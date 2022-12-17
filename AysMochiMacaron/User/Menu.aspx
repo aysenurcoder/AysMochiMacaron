@@ -1,4 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/Kullanici.Master" AutoEventWireup="true" CodeBehind="Menu.aspx.cs" Inherits="AysMochiMacaron.User.Menu" %>
+
+<%@ Import Namespace="AysMochiMacaron" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <!-- food section -->
@@ -6,38 +9,40 @@
   <section class="food_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
+        <h2 >
           Menülerimiz
         </h2>
       </div>
 
       <ul class="filters_menu">
-        <li class="active" data-filter="*">Hepsi</li>
-        <li data-filter=".macaron">Macaronlar</li>
-        <li data-filter=".mochi">Mochiler</li>
-        <li data-filter=".macarons">Tasarım Macaronlar</li>
+        <li class="active" data-filter="*" data-id="0">Hepsi</li>
+          <asp:Repeater ID="rCategory" runat="server">
+              <ItemTemplate>
+                  <li data-filter=".<%# Regex.Replace(Eval("Name").ToString().ToLower(),@"\s+","") %>" 
+                      dat-id="<%# Eval("CategoryId") %>" ><%# Eval("Name") %></li>
+              </ItemTemplate>
+          </asp:Repeater>         
       </ul>
 
       <div class="filters-content">
         <div class="row grid">
-          <div class="col-sm-6 col-lg-4 all deserts">
+            <asp:Repeater ID="rProducts" runat="server">
+                <ItemTemplate>
+                    <div class="col-sm-6 col-lg-4 all <%# Regex.Replace(Eval("CategoryName").ToString().ToLower(),@"\s+","") %>">
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../TemplateFiles/images/1666874446848.jpg" alt="">
+                  <img src="<%# Utils.GetImageUrl( Eval("ImageUrl")) %>" alt="">
                 </div>
                 <div class="detail-box">
-                  <h5>
-                    Çikolatalı Macaron
-                  </h5>
+                  <h5> <%# Eval("Name") %></h5>
                   <p>
-                    İçi çikolata dolgulu macaron
+                    <%# Eval("Description") %>
                   </p>
                   <div class="options">
-                    <h6>
-                      13₺
-                    </h6>
-                    <a href="">
+                    <h6><%# Eval("Price") %></h6>
+                    <asp:LinkButton runat="server" ID="lbAddToCart" CommandName="addToCart"
+                        CommandArgument='<%# Eval("ProductId") %>'>
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
@@ -90,13 +95,16 @@
                         <g>
                         </g>
                       </svg>
-                    </a>
+                    </asp:LinkButton>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all macarons">
+                </ItemTemplate>
+            </asp:Repeater>
+          
+          <%--<div class="col-sm-6 col-lg-4 all macaron">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -172,7 +180,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all deserts">
+          <div class="col-sm-6 col-lg-4 all macaron">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -248,7 +256,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all mochies">
+          <div class="col-sm-6 col-lg-4 all macaron">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -324,7 +332,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all macaronbox">
+          <div class="col-sm-6 col-lg-4 all macaron">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -400,7 +408,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all deserts">
+          <div class="col-sm-6 col-lg-4 all macaron">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -477,7 +485,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all macarons">
+          <div class="col-sm-6 col-lg-4 all macaron">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -554,7 +562,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all macarons">
+          <div class="col-sm-6 col-lg-4 all mochi">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -631,7 +639,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all mochies">
+          <div class="col-sm-6 col-lg-4 all mochi">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -707,11 +715,7 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="filters-content">
-        <div class="row grid">
-          <div class="col-sm-6 col-lg-4 all deserts">
+          <div class="col-sm-6 col-lg-4 all mochi">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -787,7 +791,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all macrons">
+          <div class="col-sm-6 col-lg-4 all mochi">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -863,7 +867,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all deserts">
+          <div class="col-sm-6 col-lg-4 all mochi">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -939,7 +943,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all mochies">
+          <div class="col-sm-6 col-lg-4 all mochi">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -1015,7 +1019,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all macaronbox">
+          <div class="col-sm-6 col-lg-4 all mochi">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -1091,7 +1095,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all deserts">
+          <div class="col-sm-6 col-lg-4 all macarons">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -1319,7 +1323,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all mochies">
+          <div class="col-sm-6 col-lg-4 all macarons">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -1394,14 +1398,14 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>--%>
         </div>
       </div>
-      <div class="btn-box">
+      <%--<div class="btn-box">
         <a href="">
           Daha Fazla
         </a>
-      </div>
+      </div>--%>
     </div>
   </section>
 

@@ -79,8 +79,8 @@ namespace AysMochiMacaron.User
                     con.Open();
                     cmd.ExecuteNonQuery();
                     actionName = userId == 0 ?
-                        "kayıt olma başarılı! <b><a hrf='Login.aspx'>Giriş yapmak için</a></b> buraya tıkla " :
-                        "detyaları güncelleme başarılı! <b><a href='Profile.aspx'>Buradan kontrol edebilirsiniz</a></b>";
+                        " kayıt olma başarılı! Giriş yapmak için <b><a href='Login.aspx'> buraya tıkla </a></b> " :
+                        " detyaları güncelleme başarılı! <b><a href='Profile.aspx'>Buradan kontrol edebilirsiniz</a></b>";
                     lblMsg.Visible = true;
                     lblMsg.Text = "<b>" + txtUsername.Text.Trim() + "</b>" + actionName;
                     lblMsg.CssClass = "alert-alert-success";

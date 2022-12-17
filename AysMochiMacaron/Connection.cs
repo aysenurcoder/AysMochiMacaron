@@ -11,7 +11,9 @@ namespace AysMochiMacaron
     {
         public static string GetConnectionString()
         {
-            return ConfigurationManager.ConnectionStrings["cs"].ConnectionString;
+            ConnectionStringSettings connectionStringSettings = ConfigurationManager.ConnectionStrings["cs"];
+            string connectionString = connectionStringSettings.ConnectionString;
+            return connectionString;
         }
         // public static SqlConnection connection = new SqlConnection("Data Source=(localdb)/Aysenur;Initial Catalog=MacaronvemochiDB;Integrated Security=True");
         //public static SqlConnection connection = new SqlConnection("Data Source=94.73.170.76;Initial Catalog=u0959630_macaron; User Id=u0959630_macaron;Password=Ug.jU3wg.A5@R_25");

@@ -24,6 +24,42 @@ namespace AysMochiMacaron.User
                 //Add the control to the panel
                 pnlSliderUC.Controls.Add(sliderUserControl);
             }
+
+            if (Session["userId"] == null)
+            {
+                lbLoginOrLogout.Text = "Giriş Yap";
+            }
+            else
+            {
+                lbLoginOrLogout.Text = "Çıkış Yap";
+            }
+        }
+
+        protected void lbLoginOrLogout_Click(object sender, EventArgs e)
+        {
+            if (Session["userId"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
+                Session.Abandon();
+                Response.Redirect("Login.aspx");
+            }
+        }
+
+        protected void lblRegisterOrProfile_Click(object sender, EventArgs e)
+        {
+            if (Session["userId"] != null)
+            {
+                lblRegisterOrProfile.ToolTip = "Kullanıcı Profili";
+                Response.Redirect("Profile.aspx");
+            }
+            else
+            {
+                lblRegisterOrProfile.ToolTip = "Kullanıcı Kaydı";
+                Response.Redirect("Registration.aspx");
+            }
         }
     }
 }
