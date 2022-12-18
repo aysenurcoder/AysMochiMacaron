@@ -31,7 +31,7 @@ $(window).on('load', function () {
     })
 
     $(document).ready(function () {
-        //bir sayfayý okuyun url deðiþkenlerini alýr ve bunlarý bir iliþkisel dizi olarak döndürür
+        //bir sayfayý okuyan url deðiþkenlerini alýr ve bunlarý bir iliþkisel dizi olarak döndürür
         function getUrlVars() {
             var vars = [], hash;
             var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
@@ -104,3 +104,36 @@ $(".client_owl-carousel").owlCarousel({
         }
     }
 });
+
+//'use strict'
+
+(function ($) {
+    /*-------------------
+        Miktar deðiþikliði
+     * ------------------*/
+    var proQty = $('.pro-qty');
+    proQty.prepend('<span class="dec qtybtn"> - </span>');
+    proQty.append('<span class="inc qtybtn"> + </span>');
+    proQty.on('click', '.qtybtn', function () {
+        var $button = $(this);
+        var oldValue = $button.parent().find('input').val();
+        if ($button.hasClass('inc')) {
+            //var newVal = parseFloat(oldValue) + 1;
+            if (oldValue >= 10) {
+                var newVal = parseFloat(oldValue);
+            } else {
+                newVal = parseFloat(oldValue) + 1;
+            }
+        } else {
+            //Sýfýrýn altýna düþürmeye izin vermeme
+            if (oldValue > 1) {
+                var newVal = parseFloat(oldValue) - 1;
+            } else {
+                newVal = 1;
+            }
+        }
+        button.parent().find('input').val(newVal);
+    });
+
+})(jQuery);
+

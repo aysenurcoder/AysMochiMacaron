@@ -25,13 +25,16 @@ namespace AysMochiMacaron.User
                 pnlSliderUC.Controls.Add(sliderUserControl);
             }
 
-            if (Session["userId"] == null)
+            if (Session["userId"] != null)
             {
-                lbLoginOrLogout.Text = "Giriş Yap";
+                lbLoginOrLogout.Text = "Çıkış Yap";
+                Utils utils = new Utils();
+                Session["cartCount"] = utils.cartCount(Convert.ToInt32(Session["userId"])).ToString();
             }
             else
             {
-                lbLoginOrLogout.Text = "Çıkış Yap";
+                lbLoginOrLogout.Text = "Giriş Yap";
+                Session["cartCount"] = "0";
             }
         }
 
