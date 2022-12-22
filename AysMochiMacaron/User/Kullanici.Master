@@ -69,7 +69,7 @@
             <header class="header_section">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg custom_nav-container ">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="Default.aspx">
                             <span>Ays Macaron & Mochi
                             </span>
                         </a>
@@ -190,17 +190,17 @@
                             <h4>Bize Ulaşın
                             </h4>
                             <div class="contact_link_box">
-                                <a href="">
+                                <a href="Contact.aspx">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     <span>Yer
                                     </span>
                                 </a>
-                                <a href="">
+                                <a href="Contact.aspx">
                                     <i class="fa fa-phone" aria-hidden="true"></i>
                                     <span>Tel +01 1234567890
                                     </span>
                                 </a>
-                                <a href="">
+                                <a href="Contact.aspx">
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
                                     <span>Ayse@gmail.com
                                     </span>
@@ -216,20 +216,17 @@
                                 Mutluluk sadece bir parça ısırıkta olabilir.
                             </p>
                             <div class="footer_social">
-                                <a href="">
+                                <a href="https://facebook.com">
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                                 </a>
-                                <a href="">
+                                <a href="https://twitter.com">
                                     <i class="fa fa-twitter" aria-hidden="true"></i>
                                 </a>
-                                <a href="">
+                                <a href="https://linkedin.com">
                                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                                 </a>
-                                <a href="">
+                                <a href="https://instagram.com">
                                     <i class="fa fa-instagram" aria-hidden="true"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fa fa-pinterest" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -250,7 +247,7 @@
         </footer>
         <!-- footer section -->
     </form>
-
+    
     <!-- jQery -->
    <!--<script src="../TemplateFiles/js/jquery-3.4.1.min.js"></script> -->
     <!-- popper js -->

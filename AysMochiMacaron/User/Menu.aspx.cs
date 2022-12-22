@@ -63,8 +63,8 @@ namespace AysMochiMacaron.User
                     cmd = new SqlCommand("Cart_Crud", con);
                     cmd.Parameters.AddWithValue("@Action", "INSERT");
                     cmd.Parameters.AddWithValue("@ProductId", e.CommandArgument);
-                    cmd.Parameters.AddWithValue("@Quantity", i);
-                    cmd.Parameters.AddWithValue("@userId", Session["userId"]);
+                    cmd.Parameters.AddWithValue("@Quantity", i+1);
+                    cmd.Parameters.AddWithValue("@UserId", Session["userId"]);
                     cmd.CommandType = CommandType.StoredProcedure;
                     try
                     {

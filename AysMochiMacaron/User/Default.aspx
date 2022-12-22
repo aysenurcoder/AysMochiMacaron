@@ -118,7 +118,7 @@
               uzak doğu lezzeti ve geleneksel 
               Asya Mutfağı tatlımızı burada birleştirdik.
                         </p>
-                        <a href="">Daha fazla
+                        <a href="About.aspx">Daha fazla
                         </a>
                     </div>
                 </div>

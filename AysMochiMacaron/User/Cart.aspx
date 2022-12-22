@@ -41,8 +41,8 @@
                         </td>
                         <td>₺<asp:Label ID="lblPrice" runat="server" Text='<%# Eval("Price") %>'></asp:Label>
                             <asp:HiddenField ID="hdnProductId" runat="server" Value='<%# Eval("ProductId") %>' />
-                            <asp:HiddenField ID="hdnQuantity" runat="server" Value='<%# Eval("Qty") %>' />
-                            <asp:HiddenField ID="hdnProductQuantity" runat="server" Value='<%# Eval("PrdQty") %>' />
+                            <asp:HiddenField ID="hdnQuantity" runat="server" Value='<%# Eval("Qty") %>'/>
+                            <asp:HiddenField ID="hdnPrdQuantity" runat="server" Value='<%# Eval("PrdQty") %>' />
                         </td>
                         <td>
                             <div class="product__details__option">

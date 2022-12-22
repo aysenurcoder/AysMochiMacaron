@@ -188,6 +188,7 @@
     <Content Include="Images\Category\e5652bdc-ca98-4d5f-9ed9-27b5ecdcdb21.jpg" />
     <Content Include="Images\Login.jpg" />
     <Content Include="Images\No_image.png" />
+    <Content Include="Images\odemek.jpg" />
     <Content Include="Images\Product\3b3ed5ce-5b51-4ca9-b362-742d7ba09f6b.jpg" />
     <Content Include="Images\Product\9b538fdf-6a47-49f2-89eb-fecd99a56d8a.jpg" />
     <Content Include="Images\Product\b968c269-4a00-4940-958a-9b2fd324f29f.jpg" />
@@ -197,6 +198,7 @@
     <Content Include="Images\Product\feddf572-d383-4e82-8c53-1b1d66f0ac3a.jpg" />
     <Content Include="TemplateFiles\css\bootstrap.css" />
     <Content Include="TemplateFiles\css\font-awesome.min.css" />
+    <Content Include="TemplateFiles\css\payment.css" />
     <Content Include="TemplateFiles\css\responsive.css" />
     <Content Include="TemplateFiles\css\style.css" />
     <Content Include="TemplateFiles\images\1666873728099.jpg" />
@@ -258,12 +260,14 @@
     <Content Include="TemplateFiles\js\bootstrap.js" />
     <Content Include="TemplateFiles\js\custom.js" />
     <Content Include="TemplateFiles\js\jquery-3.4.1.min.js" />
+    <Content Include="TemplateFiles\js\payment.js" />
     <Content Include="User\About.aspx" />
     <Content Include="User\Cart.aspx" />
     <Content Include="User\Contact.aspx" />
     <Content Include="User\Default.aspx" />
     <Content Include="User\Login.aspx" />
     <Content Include="User\Menu.aspx" />
+    <Content Include="User\Payment.aspx" />
     <Content Include="User\Profile.aspx" />
     <Content Include="User\Registration.aspx" />
     <Content Include="User\SliderUserControl.ascx" />
@@ -358,6 +362,13 @@
     </Compile>
     <Compile Include="User\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>

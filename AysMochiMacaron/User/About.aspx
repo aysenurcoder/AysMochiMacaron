@@ -25,9 +25,9 @@
               uzak doğu lezzeti ve geleneksel 
               Asya Mutfağı tatlımızı burada birleştirdik.
             </p>
-            <a href="">
+            <%--<a href="">
               Daha Fazla
-            </a>
+            </a>--%>
           </div>
         </div>
       </div>

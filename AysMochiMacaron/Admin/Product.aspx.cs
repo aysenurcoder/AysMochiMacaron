@@ -29,7 +29,7 @@ namespace AysMochiMacaron.Admin
                 {
                     getProducts();
                 }
-                
+
             }
             lblMsg.Visible = false;
         }
@@ -39,13 +39,14 @@ namespace AysMochiMacaron.Admin
             string actionName = string.Empty, imagePath = string.Empty, fileExtension = string.Empty;
             bool isValidToExecute = false;
             int productId = Convert.ToInt32(hdnId.Value);
+            bool isPriceDecimal = decimal.TryParse(txtPrice.Text.Trim(), out decimal price);
             con = new SqlConnection(Connection.GetConnectionString());
             cmd = new SqlCommand("Product_Crud", con);
             cmd.Parameters.AddWithValue("@Action", productId == 0 ? "INSERT" : "UPDATE");
             cmd.Parameters.AddWithValue("@ProductId", productId);
             cmd.Parameters.AddWithValue("@Name", txtName.Text.Trim());
             cmd.Parameters.AddWithValue("@Description", txtDescription.Text.Trim());
-            cmd.Parameters.AddWithValue("@Price", txtPrice.Text.Trim());
+            cmd.Parameters.AddWithValue("@Price", price);
             cmd.Parameters.AddWithValue("@Quantity", txtQuantity.Text.Trim());
             cmd.Parameters.AddWithValue("@CategoryId", ddlCategories.SelectedValue);
             cmd.Parameters.AddWithValue("@IsActive", cbIsActive.Checked);
@@ -57,7 +58,7 @@ namespace AysMochiMacaron.Admin
                     fileExtension = Path.GetExtension(fuProductImage.FileName);
                     imagePath = "Images/Product/" + obj.ToString() + fileExtension;
                     fuProductImage.PostedFile.SaveAs(Server.MapPath("~/Images/Product/") + obj.ToString() + fileExtension);
-                    cmd.Parameters.Add("@ImageUrl", imagePath);
+                    cmd.Parameters.AddWithValue("@ImageUrl", imagePath);
                     isValidToExecute = true;
                 }
                 else
@@ -204,7 +205,7 @@ namespace AysMochiMacaron.Admin
                     lblIsActive.CssClass = "badge badge-danger";
                 }
 
-                if (Convert.ToInt32(lblQuantity.Text) <=5)
+                if (Convert.ToInt32(lblQuantity.Text) <= 5)
                 {
                     lblQuantity.CssClass = "badge badge-danger";
                     lblQuantity.ToolTip = "Item about to be 'Out of stock'!";

@@ -35,7 +35,7 @@
                         <div>
                             <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ErrorMessage="Şifre girilmesi zorunludur" ControlToValidate="txtPassword"
                                 ForeColor="Red" Display="Dynamic" SetFocusOnError="true" Font-Size="Small"></asp:RequiredFieldValidator>
-                            <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" placeholder="Şifre Giriniz" TextMode="Password"></asp:TextBox>
+                            <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control"  placeholder="Şifre Giriniz" TextMode="Password"></asp:TextBox>
                         </div>
                         <div class="btn-box">
                             <asp:Button ID="btnLogin" runat="server" Text="Giriş Yap" CssClass="btn btn-success rounded-pill pl-4 pr-4 text-white"

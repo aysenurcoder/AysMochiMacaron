@@ -52,7 +52,7 @@ namespace AysMochiMacaron.Admin
                     fileExtension = Path.GetExtension(fuCategoryImage.FileName);
                     imagePath = "Images/Category/" + obj.ToString() + fileExtension;
                     fuCategoryImage.PostedFile.SaveAs(Server.MapPath("~/Images/Category/") + obj.ToString() + fileExtension);
-                    cmd.Parameters.Add("@ImageUrl", imagePath);
+                    cmd.Parameters.AddWithValue("@ImageUrl", imagePath);
                     isValidToExecute = true;
                 }
                 else

@@ -40,9 +40,9 @@ namespace AysMochiMacaron.User
             cmd.CommandType = CommandType.StoredProcedure;
             sda = new SqlDataAdapter(cmd);
             dt = new DataTable();
+            sda.Fill(dt);
             rUserProfile.DataSource = dt;
             rUserProfile.DataBind();
-            sda.Fill(dt);
             if (dt.Rows.Count == 1)
             {
                 Session["name"] = dt.Rows[0]["Name"].ToString();

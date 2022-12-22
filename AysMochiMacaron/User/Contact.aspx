@@ -14,9 +14,18 @@
           <div class="form_container">
             <form action="">
               <div>
-                <input type="text" class="form-control" placeholder="Adınız" />
+                  <br />
+                 <p style="font-family:'Times New Roman'; font-size:25px"> <i class="fa fa-phone"></i> İletişim </p>
+                  <p style="font-family:'Times New Roman'; font-size:21px ">+01 1234567890</p>
+                  <br />
+                   <p style="font-family:'Times New Roman'; font-size:25px"> <i class="fa fa-map-marker"></i> Adres </p>
+                  <p style="font-family:'Times New Roman'; font-size:21px ">Levent Sk. NO:8 Beşiktaş/İstanbul, Türkiye</p>
+                  <br />
+                   <p style="font-family:'Times New Roman'; font-size:25px"> <i class="fa fa-envelope"></i> Mail Adresimiz </p>
+                  <p style="font-family:'Times New Roman'; font-size:21px "> <a href="https://mail.google.com/mail/u/2/#inbox" >Ayse@gmail.com</a> </p>
+               <%-- <input type="text" class="form-control" placeholder="Adınız" />--%>
               </div>
-              <div>
+             <%-- <div>
                 <input type="text" class="form-control" placeholder="Telefon Numaranız" />
               </div>
               <div>
@@ -24,12 +33,12 @@
               </div>
                 <div>
                 <input type="text" class="form-control" placeholder="Şikayetiniz" />
-              </div>
-              <div class="btn_box">
+              </div>--%>
+              <%--<div class="btn_box">
                 <button>
                   Gonder
                 </button>
-              </div>
+              </div>--%>
             </form>
           </div>
         </div>

@@ -15,7 +15,7 @@
                         <h4>Mutluluk sadece bir parça ısırıkta olabilir.</h4>                  
                     </p>
                     <div class="btn-box">
-                      <a href="" class ="btn1">
+                      <a href="Menu.aspx" class ="btn1">
                         Şimdi Sipariş Ver
                       </a>
                     </div>
@@ -36,7 +36,7 @@
                       <h4>Mutluluk sadece bir kutu içine sığdırılabilir mi ?</h4>
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="Menu.aspx" class="btn1">
                         Şimdi Sipariş Ver
                       </a>
                     </div>
@@ -57,7 +57,7 @@
                       <h4>Soğuk bir mutluluk.</h4>
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="Menu.aspx" class="btn1">
                         Şimdi Sipariş Ver
                       </a>
                     </div>

@@ -4,7 +4,9 @@
 function getYear() {
     var currentDate = new Date();
     var currentYear = currentDate.getFullYear();
-    document.querySelector("#displayYear").innerHTML = currentYear;
+    var item = document.querySelector("#displayYear");
+    if (item != null)
+        item.innerHTML = currentYear;
 }
 
 getYear();
