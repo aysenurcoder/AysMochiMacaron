@@ -23,21 +23,45 @@ namespace AysMochiMacaron.User
                 {
                     Response.Redirect("Login.aspx");
                 }
-                else
-                {
-                    getPaymentItems();
-                }
+                
             }
-        }
-
-        private void getPaymentItems()
-        {
-           
         }
 
         protected void btnAdd_Click(object sender, EventArgs e)
         {
+            
+
+
+            con = new SqlConnection(Connection.GetConnectionString());
+            cmd = new SqlCommand("Payment_Crud", con);
+            cmd.Parameters.AddWithValue("@Action", "INSERT");
+            cmd.Parameters.AddWithValue("@Name", name.Text.ToString());
+            cmd.Parameters.AddWithValue("@CardNo", cardnumber.Text.ToString());
+            cmd.Parameters.AddWithValue("@ExpiryDate", expirationdate.Text.ToString());
+            cmd.Parameters.AddWithValue("@CvvNo", securitycode.Text.ToString());
+            var check = cmd.CommandType = CommandType.StoredProcedure;
+            sda = new SqlDataAdapter(cmd);
+            dt = new DataTable();
+            sda.Fill(dt);
+            con.Close();
+
+
+
+
+
+
+
+
+
+            lblMsg.Visible = true;
+            lblMsg.Text = "Ödeme başarılı";
+            lblMsg.CssClass = "alert alert-success";
+            Response.AddHeader("REFRESH", "1;URL=Default.aspx");
+
+
 
         }
+
+        
     }
 }

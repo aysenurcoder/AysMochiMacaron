@@ -9,10 +9,10 @@
                 <div class="col-md-7 col-lg-6 ">
                   <div class="detail-box">
                     <h1>
-                      Macaronlar ve Mochiler :) 
+                      Kahveler Ve Tatlılar :) 
                     </h1>
                     <p>
-                        <h4>Mutluluk sadece bir parça ısırıkta olabilir.</h4>                  
+                        <h4>Mutluluk sadece bir tabakta olabilir.</h4>                  
                     </p>
                     <div class="btn-box">
                       <a href="Menu.aspx" class ="btn1">
@@ -30,10 +30,10 @@
                 <div class="col-md-7 col-lg-6 ">
                   <div class="detail-box">
                     <h1>
-                      Tasarım Kutular :)
+                      Özenle hazırlanmış kahveler :)
                     </h1>
                     <p>
-                      <h4>Mutluluk sadece bir kutu içine sığdırılabilir mi ?</h4>
+                      <h4>Mutluluk sadece bir fincana sığdırılabilir mi ?</h4>
                     </p>
                     <div class="btn-box">
                       <a href="Menu.aspx" class="btn1">
@@ -51,10 +51,10 @@
                 <div class="col-md-7 col-lg-6 ">
                   <div class="detail-box">
                     <h1>
-                      Asya Mutfağından Esintiler :)
+                      Kahve Çekirdeğiyle Asyadan Esintiler :)
                     </h1>
                     <p>
-                      <h4>Soğuk bir mutluluk.</h4>
+                      <h4>Sıcak bir mutluluk.</h4>
                     </p>
                     <div class="btn-box">
                       <a href="Menu.aspx" class="btn1">

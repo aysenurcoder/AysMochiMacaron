@@ -9,14 +9,14 @@
       <div class="row">
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="../TemplateFiles/images/yaban mersinli mochi.jpg" alt="">
+            <img src="../TemplateFiles/images/profiterol.jpg" alt="">
           </div>
         </div>
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                Biz Ays Macaron & Mochi'yiz
+                Biz Ays Coffee & Desert'ız
               </h2>
             </div>
             <p>

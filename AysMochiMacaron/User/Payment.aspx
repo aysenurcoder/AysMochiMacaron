@@ -16,8 +16,8 @@
     <link href="../TemplateFiles/css/payment.css" rel="stylesheet" />
     <div class="payment-title">
         <div class="align-self-end">
-                    <asp:Label ID="lblMsg" runat="server" ></asp:Label>
-                </div>
+            <asp:Label ID="lblMsg" runat="server"></asp:Label>
+        </div>
         <h1>Ödeme Yap</h1>
     </div>
 
@@ -40,7 +40,7 @@
                             <path class="darkcolor greydark" d="M750,431V193.2c-217.6-57.5-556.4-13.5-750,24.9V431c0,22.1,17.9,40,40,40h670C732.1,471,750,453.1,750,431z" />
                         </g>
                         <text transform="matrix(1 0 0 1 60.106 295.0121)" id="svgnumber" class="st2 st3 st4">0123 4567 8910 1112</text>
-                        <text transform="matrix(1 0 0 1 54.1064 428.1723)" id="svgname" class="st2 st5 st6">JOHN DOE</text>
+                        <text transform="matrix(1 0 0 1 54.1064 428.1723)" id="svgname" class="st2 st5 st6">Ayşenur Akın</text>
                         <text transform="matrix(1 0 0 1 54.1074 389.8793)" class="st7 st5 st8">cardholder name</text>
                         <text transform="matrix(1 0 0 1 479.7754 388.8793)" class="st7 st5 st8">expiration</text>
                         <text transform="matrix(1 0 0 1 65.1054 241.5)" class="st7 st5 st8">card number</text>
@@ -124,36 +124,48 @@
     <div class="form-container">
         <div class="field-container">
             <label for="name">Adı Ve Soyadı</label>
-            <input id="name" maxlength="20" type="text">
+            <asp:RequiredFieldValidator ID="rfvName"  runat="server" ErrorMessage="Ad ve soyad girilmesi zorunludur" ControlToValidate="name"
+                ForeColor="Red" Display="Dynamic" SetFocusOnError="true" Font-Size="Small"></asp:RequiredFieldValidator>
+            <asp:TextBox ID="name" runat="server" CssClass="form-control"></asp:TextBox>
+            <%--<input id="name" maxlength="20" type="text">--%>
         </div>
         <div class="field-container">
-            <label for="cardnumber">Card Number</label><span id="generatecard">generate random</span>
-            <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
+            <label for="cardnumber">Kart Numarası</label><%--<span id="generatecard">random oluştur</span>--%>
+            <asp:RequiredFieldValidator ID="rfvCardnumber"  runat="server" ErrorMessage="Kart no girilmesi zorunludur" ControlToValidate="cardnumber"
+                ForeColor="Red" Display="Dynamic" SetFocusOnError="true" ValidationExpression="[0-9]*" Font-Size="Small"></asp:RequiredFieldValidator>
+            <asp:TextBox ID="cardnumber" runat="server" CssClass="form-control"></asp:TextBox>
+            <%--<input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">--%>
             <svg id="ccicon" class="ccicon" width="750" height="471" viewBox="0 0 750 471" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
             </svg>
         </div>
         <div class="field-container">
             <label for="expirationdate">Son Kullanma Tarihi (mm/yy)</label>
-            <input id="expirationdate" type="text" pattern="[0-9]*" inputmode="numeric">
+            <asp:RequiredFieldValidator ID="rfvExpirationdate"  runat="server" ErrorMessage="Tarih girilmesi zorunludur" ControlToValidate="expirationdate"
+                ForeColor="Red" Display="Dynamic" SetFocusOnError="true" ValidationExpression="[1-9]*" Font-Size="Small"></asp:RequiredFieldValidator>
+            <asp:TextBox ID="expirationdate" runat="server" CssClass="form-control"></asp:TextBox>
+           <%-- <input id="expirationdate" type="text" pattern="[0-9]*" inputmode="numeric">--%>
         </div>
         <div class="field-container">
             <label for="securitycode">CVV</label>
-            <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric">
+            <asp:RequiredFieldValidator ID="rfvSecuritycode"  runat="server" ErrorMessage="Cvv girilmesi zorunludur" ControlToValidate="securitycode"
+                ForeColor="Red" Display="Dynamic" SetFocusOnError="true" ValidationExpression="[1-9]*" Font-Size="Small"></asp:RequiredFieldValidator>
+            <asp:TextBox ID="securitycode" runat="server" CssClass="form-control" TextMode="password"></asp:TextBox>
+            <%--<input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric">--%>
         </div>
-        <div class="field-container" >
+        <div class="field-container">
             <label for="totalPrice">Toplam Fiyat (₺)</label>
-            <input id="totalPrice"  pattern="[0-9]*" type="text">
+            <p style="padding: 10px; border: 1.5px ridge;">₺<% Response.Write(Session["grandTotalPrice"]); %></p>
         </div>
 
     </div>
     <div class="fielded-container">
-            <div class="btnOde" style="width: max-content; height: max-content; position: relative;">
-                <asp:Button ID="btnAdd" runat="server" Text="Öde" BackColor="Green" CssClass="btn btn-primary"
-                    OnClick="btnAdd_Click" />
-                &nbsp;                                                   
-            </div>
+        <div class="btnOde" style="width: max-content; height: max-content; position: relative;">
+            <asp:Button ID="btnAdd" runat="server" Text="Öde" BackColor="Green" CssClass="btn btn-primary"
+                OnClick="btnAdd_Click" />
+            &nbsp;                                                   
         </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
     <script src="../TemplateFiles/js/payment.js"></script>
 </asp:Content>

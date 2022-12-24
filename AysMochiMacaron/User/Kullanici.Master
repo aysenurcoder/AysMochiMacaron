@@ -63,14 +63,14 @@
 
         <div class="hero_area">
             <div class="bg-box">
-                <img src="../TemplateFiles/images/306395699_3286034545049675_3744935512549745608_n.jpg" alt="">
+                <img src="../TemplateFiles/images/cekirdek.jpeg" alt="">
             </div>
             <!-- header section strats -->
             <header class="header_section">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg custom_nav-container ">
                         <a class="navbar-brand" href="Default.aspx">
-                            <span>Ays Macaron & Mochi
+                            <span>Ays Coffee & Desert
                             </span>
                         </a>
 
@@ -210,10 +210,10 @@
                     </div>
                     <div class="col-md-4 footer-col">
                         <div class="footer_detail">
-                            <a href="" class="footer-logo">Macaronlar ve Mochiler :)
+                            <a href="" class="footer-logo">Kahve Ve Tatlılar :)
                             </a>
                             <p>
-                                Mutluluk sadece bir parça ısırıkta olabilir.
+                                Mutluluk sadece bir fincanda olabilir.
                             </p>
                             <div class="footer_social">
                                 <a href="https://facebook.com">

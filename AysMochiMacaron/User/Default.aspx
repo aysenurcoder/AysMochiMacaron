@@ -103,20 +103,19 @@
             <div class="row">
                 <div class="col-md-6 ">
                     <div class="img-box">
-                        <img src="../TemplateFiles/images/cileklimochi.jpg" alt="">
+                        <img src="../TemplateFiles/images/magnolia.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="detail-box">
                         <div class="heading_container">
-                            <h2>Biz Ays Macaron & Mochi'yiz
+                            <h2>Biz Ays Coffee & Desert'ız
                             </h2>
                         </div>
                         <p>
-                            Avrupa'nın pek çok çeşit macaronu, 
-              ozel tasarım macaron kutularımızı ve 
-              uzak doğu lezzeti ve geleneksel 
-              Asya Mutfağı tatlımızı burada birleştirdik.
+                            Özenle hazırlanmış kahvelerimizi ve bizimle 
+                            mutluluğunuzu paylaşmak için sizlere özenle hazırladığımız
+                            tatlılarımızı sizlerle buluşturuyoruz.
                         </p>
                         <a href="About.aspx">Daha fazla
                         </a>
@@ -158,7 +157,7 @@
                             </div>
                             <div class="detail-box">
                                 <p>
-                                    Bize sunulan bu güzel lezzzetler için Ays Macaron & Mochi' ye teşekkür ederiz.
+                                    Bize sunulan bu güzel lezzzetler için Ays Coffee & Desert'a teşekkür ederiz.
                                 </p>
                                 <h6>Esin Yaprak
                                 </h6>
