@@ -9,21 +9,21 @@
       <div class="row">
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="../TemplateFiles/images/profiterol.jpg" alt="">
+            <img src="../TemplateFiles/images/m1.jpg" alt="">
           </div>
         </div>
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                Biz Ays Coffee & Desert'ız
+                Biz Ays Mochi & Macaron'uz
               </h2>
             </div>
             <p>
-              Avrupa'nın pek çok çeşit macaronu, 
-              ozel tasarım macaron kutularımızı ve 
-              uzak doğu lezzeti ve geleneksel 
-              Asya Mutfağı tatlımızı burada birleştirdik.
+              Avrupa'nın pek çok macaronu, Asya'nın gözdesi mochiler ve 
+              özenle hazırlanmış macaron kutularımızı
+               sizlerle buluşturuyoruz.
+             
             </p>
             <%--<a href="">
               Daha Fazla

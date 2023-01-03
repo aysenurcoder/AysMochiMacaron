@@ -183,9 +183,6 @@
     <Content Include="assets\pages\widget\amchart\worldLow.min.js" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Images\Category\5c72fa52-8d1f-4a03-8f54-649949a596b1.jpg" />
-    <Content Include="Images\Category\5e325923-e8fa-4fa0-ab69-e457f7240efe.jpg" />
-    <Content Include="Images\Category\e5652bdc-ca98-4d5f-9ed9-27b5ecdcdb21.jpg" />
     <Content Include="Images\Login.jpg" />
     <Content Include="Images\No_image.png" />
     <Content Include="Images\odemek.jpg" />
@@ -212,6 +209,7 @@
     <Content Include="TemplateFiles\images\1666874718145.jpg" />
     <Content Include="TemplateFiles\images\295622660_1016978802323044_2571561903915754403_n.jpg" />
     <Content Include="TemplateFiles\images\299800154_745987993324627_4046470837148879479_n.jpg" />
+    <Content Include="TemplateFiles\images\3.jpg" />
     <Content Include="TemplateFiles\images\306395699_3286034545049675_3744935512549745608_n.jpg" />
     <Content Include="TemplateFiles\images\309084741_166499962699526_7936439665471583436_n.jpg" />
     <Content Include="TemplateFiles\images\310729082_3426736424279559_2883001743264071728_n - Kopya.jpg" />
@@ -241,6 +239,8 @@
     <Content Include="TemplateFiles\images\limonlumacaron.jpg" />
     <Content Include="TemplateFiles\images\login %281%29.png" />
     <Content Include="TemplateFiles\images\login.png" />
+    <Content Include="TemplateFiles\images\m1.jpg" />
+    <Content Include="TemplateFiles\images\m8.jpg" />
     <Content Include="TemplateFiles\images\macarons.jpg" />
     <Content Include="TemplateFiles\images\magnolia.jpg" />
     <Content Include="TemplateFiles\images\mangolu mochi.jpg" />
@@ -249,7 +249,6 @@
     <Content Include="TemplateFiles\images\mochies.jpg" />
     <Content Include="TemplateFiles\images\naneli.jpg" />
     <Content Include="TemplateFiles\images\odeme resmi.jpg" />
-    <Content Include="TemplateFiles\images\odeme resmi2.jpg" />
     <Content Include="TemplateFiles\images\oreolu macaron.jpg" />
     <Content Include="TemplateFiles\images\orman meyveli mochi.jpg" />
     <Content Include="TemplateFiles\images\profiterol.jpg" />
@@ -426,6 +425,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\Category\" />
     <Folder Include="Images\User\" />
     <Folder Include="Models\" />
   </ItemGroup>

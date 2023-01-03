@@ -63,14 +63,14 @@
 
         <div class="hero_area">
             <div class="bg-box">
-                <img src="../TemplateFiles/images/cekirdek.jpeg" alt="">
+                <img src="../TemplateFiles/images/3.jpg" alt="">
             </div>
             <!-- header section strats -->
             <header class="header_section">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg custom_nav-container ">
                         <a class="navbar-brand" href="Default.aspx">
-                            <span>Ays Coffee & Desert
+                            <span>Ays Mochi & Macaron    (Ödev amaçlıdır!)
                             </span>
                         </a>
 
@@ -197,7 +197,7 @@
                                 </a>
                                 <a href="Contact.aspx">
                                     <i class="fa fa-phone" aria-hidden="true"></i>
-                                    <span>Tel +01 1234567890
+                                    <span>Tel +09 1234567890
                                     </span>
                                 </a>
                                 <a href="Contact.aspx">
@@ -210,10 +210,10 @@
                     </div>
                     <div class="col-md-4 footer-col">
                         <div class="footer_detail">
-                            <a href="" class="footer-logo">Kahve Ve Tatlılar :)
+                            <a href="" class="footer-logo">Mochiler Ve Macaronlar :)
                             </a>
                             <p>
-                                Mutluluk sadece bir fincanda olabilir.
+                                Mutluluk sadece bir ısırıkta olabilir.
                             </p>
                             <div class="footer_social">
                                 <a href="https://facebook.com">

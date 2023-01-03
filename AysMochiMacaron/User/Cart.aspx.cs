@@ -66,7 +66,7 @@ namespace AysMochiMacaron.User
                     con.Open();
                     cmd.ExecuteNonQuery();
                     getCartItems();
-                    //Cart sayısı
+                    //Kart sayısı
                     Session["cartCount"] = utils.cartCount(Convert.ToInt32(Session["userId"]));
                 }
                 catch (Exception ex)
@@ -144,6 +144,8 @@ namespace AysMochiMacaron.User
 
                     }
                 }
+
+
                 if (isTrue)
                 {
                     Response.Redirect("Payment.aspx");
@@ -152,8 +154,10 @@ namespace AysMochiMacaron.User
                 {
                     lblMsg.Visible = true;
                     lblMsg.Text = "<b>'" + pName + "'</b> stokta yok :(";
-                    lblMsg.CssClass = "alert alert-warning";
+                    lblMsg.CssClass = "alert alert-warning"; 
                 }
+
+                //clear();
             }
 
         }
@@ -189,5 +193,6 @@ namespace AysMochiMacaron.User
                 }
             }
         }
+
     }
 }

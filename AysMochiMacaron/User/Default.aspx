@@ -103,19 +103,17 @@
             <div class="row">
                 <div class="col-md-6 ">
                     <div class="img-box">
-                        <img src="../TemplateFiles/images/magnolia.jpg" alt="">
+                        <img src="../TemplateFiles/images/m8.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="detail-box">
                         <div class="heading_container">
-                            <h2>Biz Ays Coffee & Desert'ız
+                            <h2>Biz Ays Mochi & Macaron'uz
                             </h2>
                         </div>
                         <p>
-                            Özenle hazırlanmış kahvelerimizi ve bizimle 
-                            mutluluğunuzu paylaşmak için sizlere özenle hazırladığımız
-                            tatlılarımızı sizlerle buluşturuyoruz.
+                            Özenle hazırlanmış macaronlar ve mochileri sizlerle buluşturuyoruz.
                         </p>
                         <a href="About.aspx">Daha fazla
                         </a>
@@ -143,7 +141,7 @@
                             </div>
                             <div class="detail-box">
                                 <p>
-                                    Gerçekten harikaydı. Teşekkürler:)
+                                    Gerçekten tatları harikaydı. Teşekkürler:)
                                 </p>
                                 <h6>Esila Yener
                                 </h6>
@@ -157,9 +155,9 @@
                             </div>
                             <div class="detail-box">
                                 <p>
-                                    Bize sunulan bu güzel lezzzetler için Ays Coffee & Desert'a teşekkür ederiz.
+                                    Bize sunulan bu güzel lezzetler için Ays Mochi & Macaron'a teşekkür ederiz.
                                 </p>
-                                <h6>Esin Yaprak
+                                <h6>Esin Özel
                                 </h6>
                             </div>
                         </div>

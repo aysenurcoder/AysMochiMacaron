@@ -26,6 +26,7 @@ namespace AysMochiMacaron.User
                 else
                 {
                     getUserDetails();
+                    getOrderDetails();
                 }
             }
         }
@@ -50,6 +51,20 @@ namespace AysMochiMacaron.User
                 Session["imageUrl"] = dt.Rows[0]["ImageUrl"].ToString();
                 Session["createdDate"] = dt.Rows[0]["CreatedDate"].ToString();
             }
+        }
+        void getOrderDetails()
+        {
+            con = new SqlConnection(Connection.GetConnectionString());
+            cmd = new SqlCommand("Order_Crud", con);
+            cmd.Parameters.AddWithValue("@Action", "SELECT4ORDER");
+            cmd.Parameters.AddWithValue("@UserId", Session["userId"]);
+            cmd.CommandType = CommandType.StoredProcedure;
+            sda = new SqlDataAdapter(cmd);
+            dt = new DataTable();
+            sda.Fill(dt);
+            rOrder.DataSource = dt;
+            rOrder.DataBind();
+
         }
     }
 }
